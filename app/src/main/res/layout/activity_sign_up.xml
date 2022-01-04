@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity">
+
+    <EditText
+        android:id="@+id/customerName"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/jobCust"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="1dp"
+        android:ems="10"
+        android:hint="Job"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/usernameCust"
+        app:layout_constraintStart_toStartOf="@+id/usernameCust"
+        app:layout_constraintTop_toBottomOf="@+id/usernameCust" />
+
+    <EditText
+        android:id="@+id/passwrodCust"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="1dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/customerName"
+        app:layout_constraintStart_toStartOf="@+id/customerName"
+        app:layout_constraintTop_toBottomOf="@+id/usernameCust" />
+
+    <EditText
+        android:id="@+id/usernameCust"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="56dp"
+        android:ems="10"
+        android:hint="User Name"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toBottomOf="@+id/customerName"
+        app:layout_constraintStart_toEndOf="@+id/customerName"
+        app:layout_constraintTop_toTopOf="@+id/customerName" />
+
+    <Button
+        android:id="@+id/buttonSign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="16dp"
+        android:text="Sign Up"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="100px"
+        android:layout_marginStart="172dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="172dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/purple_500"
+        android:text="Birth Date"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/calendarView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwrodCust"
+        app:layout_constraintVertical_bias="0.807" />
+
+    <EditText
+        android:id="@+id/cgender"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="1dp"
+        android:ems="10"
+        android:hint="Gender"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@+id/passwrodCust"
+        app:layout_constraintTop_toBottomOf="@+id/passwrodCust" />
+
+    <EditText
+        android:id="@+id/forgetkey"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="1dp"
+        android:ems="10"
+        android:hint="Forget Key"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toBottomOf="@+id/cgender"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/cgender" />
+
+    <DatePicker
+        android:id="@+id/calendarView"
+        android:layout_width="377dp"
+        android:layout_height="215dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonSign"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwrodCust"
+        app:layout_constraintVertical_bias="0.764" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
